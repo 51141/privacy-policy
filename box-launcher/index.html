@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Box Launcher</title>
+    <style>
+        :root {
+            --bg-color: #0f1115;
+            --surface-color: #171a21;
+            --surface-border: #262b36;
+            --text-primary: #e6edf3;
+            --text-secondary: #8b949e;
+            --accent-color: #3b82f6;
+            --accent-glow: rgba(59, 130, 246, 0.15);
+            --success-color: #10b981;
+            --success-bg: rgba(16, 185, 129, 0.1);
+        }
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                --bg-color: #f8fafc;
+                --surface-color: #ffffff;
+                --surface-border: #e2e8f0;
+                --text-primary: #0f172a;
+                --text-secondary: #64748b;
+                --accent-color: #2563eb;
+                --accent-glow: rgba(37, 99, 235, 0.08);
+                --success-color: #059669;
+                --success-bg: rgba(5, 150, 105, 0.08);
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.65;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+        }
+
+        .top-nav {
+            margin-bottom: 24px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: color 0.15s ease;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--surface-border);
+        }
+
+        .app-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--accent-glow);
+            color: var(--accent-color);
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 14px;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+        }
+
+        .meta {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .highlight-card {
+            background-color: var(--surface-color);
+            border: 1px solid var(--surface-border);
+            border-left: 4px solid var(--success-color);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 28px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .highlight-card h3 {
+            color: var(--success-color);
+            font-size: 1.15rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .highlight-card p {
+            color: var(--text-primary);
+            font-size: 0.98rem;
+        }
+
+        .badges-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+            margin-top: 12px;
+        }
+
+        .badge-pill {
+            background: var(--success-bg);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            color: var(--text-primary);
+            padding: 10px 14px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        section {
+            margin-bottom: 36px;
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            font-weight: 600;
+            margin-bottom: 14px;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 14px;
+            font-size: 1rem;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 16px;
+        }
+
+        li {
+            padding: 12px 16px;
+            margin-bottom: 10px;
+            background-color: var(--surface-color);
+            border: 1px solid var(--surface-border);
+            border-radius: 8px;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        li strong {
+            color: var(--text-primary);
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        code {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: var(--accent-color);
+        }
+
+        footer {
+            margin-top: 50px;
+            padding-top: 24px;
+            border-top: 1px solid var(--surface-border);
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="top-nav">
+            <a href="../" class="back-link">&larr; Back to all apps</a>
+        </nav>
+
+        <header>
+            <div class="app-badge">Box Launcher</div>
+            <h1>Privacy Policy</h1>
+            <p class="meta">Effective Date: November 2, 2026 &bull; Last Updated: November 2, 2026</p>
+        </header>
+
+        <div class="highlight-card">
+            <h3>&#10003; Zero Data Collection &amp; 100% Offline Guarantee</h3>
+            <p>
+                <strong>Box Launcher does not collect, record, transmit, share, or sell any personal data or usage information.</strong> 
+                The application operates entirely offline on your device.
+            </p>
+            <div class="badges-grid">
+                <div class="badge-pill">&#128274; Zero Internet Permission Requested</div>
+                <div class="badge-pill">&#128683; No Analytics &amp; No Crash Tracking</div>
+                <div class="badge-pill">&#128683; No Advertisements or Ad SDKs</div>
+                <div class="badge-pill">&#128187; 100% On-Device Processing</div>
+            </div>
+        </div>
+
+        <section>
+            <h2>1. Technical Verification of Offline Architecture</h2>
+            <p>
+                Box Launcher does not include the Android <code>android.permission.INTERNET</code> permission in its application manifest. 
+                Because the Android operating system enforces strict permission boundaries, Box Launcher cannot open network connections, 
+                cannot reach external servers, and cannot transfer data off your device under any circumstances.
+            </p>
+        </section>
+
+        <section>
+            <h2>2. Information Handled Strictly On Your Device</h2>
+            <p>
+                To provide standard Android home screen and launcher functions, Box Launcher processes certain information locally on your device:
+            </p>
+            <ul>
+                <li>
+                    <strong>Installed Applications (<code>QUERY_ALL_PACKAGES</code>)</strong>
+                    Box Launcher queries the list of installed applications on your device solely to display your app drawer, home screen shortcuts, and app search results. This data is indexed and stored in a private local database on your phone and is never shared or exported.
+                </li>
+                <li>
+                    <strong>App Usage Telemetry &amp; Markov Predictions</strong>
+                    Smart app suggestions and recent app shortcuts are computed dynamically using local, on-device temporal prediction algorithms. These calculations occur 100% offline in your local database.
+                </li>
+                <li>
+                    <strong>Hidden Apps &amp; Biometric Protection (<code>USE_BIOMETRIC</code>)</strong>
+                    If you choose to hide apps in the secure vault, biometric authentication (fingerprint/face unlock) is verified entirely by Android's native <code>BiometricPrompt</code> system service. Box Launcher never has access to, nor does it store, any biometric or cryptographic credentials.
+                </li>
+                <li>
+                    <strong>Wallpaper Colors &amp; Theming (<code>SET_WALLPAPER</code>)</strong>
+                    Wallpapers and color palette extraction for Material You dynamic theming are processed locally using Android system APIs.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. Android System Services &amp; Explicit Disclosures</h2>
+            <p>
+                Box Launcher utilizes optional Android system services to provide convenience gestures and media control. These services strictly operate locally:
+            </p>
+            <ul>
+                <li>
+                    <strong>Accessibility Service (<code>BIND_ACCESSIBILITY_SERVICE</code>)</strong>
+                    <br>
+                    <strong>Purpose:</strong> Box Launcher provides an optional double-tap gesture on an empty space of the home screen to lock the screen without breaking biometric unlock (Smart Lock).
+                    <br>
+                    <strong>Disclosure:</strong> Box Launcher uses Android's Accessibility API solely to invoke the system <code>GLOBAL_ACTION_LOCK_SCREEN</code> action. Box Launcher does <em>not</em> read screen contents, capture user input, log keystrokes, or intercept interactions in other applications.
+                </li>
+                <li>
+                    <strong>Notification Listener Service (<code>BIND_NOTIFICATION_LISTENER_SERVICE</code>)</strong>
+                    <br>
+                    <strong>Purpose:</strong> Box Launcher provides an optional home screen music playback widget.
+                    <br>
+                    <strong>Disclosure:</strong> Box Launcher reads media playback status (such as track title, artist name, and playback state) strictly to render current media controls on your launcher widget. No notification messages, personal texts, or non-media notification details are read, saved, or logged.
+                </li>
+                <li>
+                    <strong>Do Not Disturb Policy (<code>ACCESS_NOTIFICATION_POLICY</code>)</strong>
+                    <br>
+                    <strong>Purpose:</strong> Box Launcher allows toggling the system Do Not Disturb (DND) state directly via quick toggles on the home screen.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Third-Party Services, SDKs &amp; Advertising</h2>
+            <p>
+                Box Launcher contains:
+            </p>
+            <ul>
+                <li><strong>No Advertising SDKs:</strong> There are no advertisements or commercial sponsor integrations.</li>
+                <li><strong>No Analytics SDKs:</strong> There is no Google Analytics, Firebase Analytics, Mixpanel, or similar user tracking SDK.</li>
+                <li><strong>No Remote Crash Reporting:</strong> No crash dumps or device identifiers are sent to third parties.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. Data Retention &amp; Deletion</h2>
+            <p>
+                All launcher settings, icon layouts, custom folder structures, and usage frequencies are stored within your device's private app sandbox (SQLite/Room). 
+                You can delete all data at any time by:
+            </p>
+            <ul>
+                <li>Navigating to your phone's <strong>Settings &gt; Apps &gt; Box Launcher &gt; Storage &gt; Clear Data</strong>.</li>
+                <li>Or by uninstalling Box Launcher from your device, which causes Android to immediately erase all associated local databases.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>6. Children's Privacy</h2>
+            <p>
+                Box Launcher does not collect any personal information from anyone, including children under the age of 13 (or under applicable local legal age). It is fully compliant with the Children's Online Privacy Protection Act (COPPA) and Google Play Families Policy.
+            </p>
+        </section>
+
+        <section>
+            <h2>7. Changes to This Privacy Policy</h2>
+            <p>
+                If we update or modify this Privacy Policy in future updates, the updated policy will be posted on this page with an updated "Last Updated" date.
+            </p>
+        </section>
+
+        <section>
+            <h2>8. Contact Us</h2>
+            <p>
+                If you have any questions, suggestions, or concerns regarding this Privacy Policy or Box Launcher's offline architecture, please open an issue or reach out via our GitHub repository.
+            </p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Box Launcher. All rights reserved. Built with privacy and simplicity in mind.</p>
+        </footer>
+    </div>
+</body>
+</html>
